@@ -1,0 +1,22 @@
+{
+  "name": "@aleph/create-next-component",
+  "version": "1.0.0",
+  "description": "A simple script for creating Next(js)-level boilerplate components",
+  "main": "bin/create-next-component.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlephSF/create-next-component.git"
+  },
+  "author": "Matt Glaser",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AlephSF/create-next-component/issues"
+  },
+  "homepage": "https://github.com/AlephSF/create-next-component#readme",
+  "bin": {
+    "create-next-component": "bin/create-next-component.js"
+  }
+}
