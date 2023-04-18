@@ -1,6 +1,6 @@
 {
   "name": "@aleph/create-next-component",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A simple script for creating Next(js)-level boilerplate components",
   "main": "bin/create-next-component.js",
   "scripts": {
