@@ -1,6 +1,6 @@
 # Create Next Component
 
-From anywhere in your project run `npx
+From anywhere in your project run `npx @aleph/create-next-component`
 
 This is a tiny, opinionated command line script that, when run, will ask you
 for a component name (CapitalizeAndCamelCaseItPlease) and then generate a simple
