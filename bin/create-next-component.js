@@ -90,13 +90,13 @@ export default meta
 
 type Story = StoryObj<typeof ${componentName}>;
 
-export const ${componentName}StoryFoo: Story = {
+export const Foo: Story = {
   args: {
     text: 'Hello World!',
   },
 }
 
-export const ${componentName}StoryBar: Story = {
+export const Bar: Story = {
   args: {
     text: 'Hello World, different variation!',
   },
@@ -119,27 +119,27 @@ Markdown for stuff like code snippets:
 \`\`\`
 
 Then include your component story/stories by importing them as props inside the React \`Canvas\`
-component. For instance, if you have a Story called \`${componentName}StoryFoo\` inside your story, and another
-one called \`${componentName}StoryBar\` inside it, you could write some stuff in markdown and then go get the 
+component. For instance, if you have a Story called \`Foo\` inside your story, and another
+one called \`Bar\` inside it, you could write some stuff in markdown and then go get the 
 whole story like this:
 \`\`\`jsx
-<Canvas of={${componentName}Stories.${componentName}StoryFoo} />
+<Canvas of={${componentName}Stories.Foo} />
 
-<Canvas of={${componentName}Stories.${componentName}StoryBar} />
+<Canvas of={${componentName}Stories.Bar} />
 \`\`\`
 
 Which will then look like this:
 
-<Canvas of={${componentName}Stories.${componentName}StoryFoo} />
+<Canvas of={${componentName}Stories.Foo} />
 
-<Canvas of={${componentName}Stories.${componentName}StoryBar} />
+<Canvas of={${componentName}Stories.Bar} />
   
 `
 
   fs.writeFileSync(path.join(componentBaseDir, `${componentName}.tsx`), tsxContent)
   fs.writeFileSync(path.join(componentBaseDir, `${componentName}.module.scss`), scssContent)
   fs.writeFileSync(path.join(componentBaseDir, `${componentName}.stories.tsx`), storyContent)
-  fs.writeFileSync(path.join(componentBaseDir, `${componentName}Doc.mdx`), docsContent)
+  fs.writeFileSync(path.join(componentBaseDir, `${componentName}.mdx`), docsContent)
 
   const indexContent = `export { default } from './${componentName}'\n`
 
