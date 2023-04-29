@@ -29,7 +29,9 @@ function createComponent(componentName, componentDir) {
     fs.mkdirSync(componentBaseDir, { recursive: true })
   }
 
-  const tsxContent = `import React, { useState, useEffect } from 'react'
+  const tsxContent = `'use client'
+
+import React, { useState, useEffect } from 'react'
 import classNames from 'classnames'
 import styles from './${componentName}.module.scss'
 
@@ -84,6 +86,7 @@ import ${componentName} from '.'
 const meta: Meta<typeof ${componentName}> = {
   title: 'Components/${componentName}',
   component: ${componentName},
+  //   tags: ['autodocs'], // Uncomment if you aren't using an MDX file for docs here
 }
 
 export default meta
