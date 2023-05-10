@@ -39,7 +39,7 @@ interface ${componentName}Props {
   text: string
 }
 
-export default ${componentName}({ text }: ${componentName}Props) => {
+export default function ${componentName}({ text }: ${componentName}Props) {
   const [count, setCount] = useState(0)
 
   useEffect(() => {
@@ -65,7 +65,6 @@ export default ${componentName}({ text }: ${componentName}Props) => {
     </div>
   )
 }
-
 `
 
   const scssContent = `.container {
