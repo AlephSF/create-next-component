@@ -39,7 +39,7 @@ interface ${componentName}Props {
   text: string
 }
 
-const ${componentName}: React.FC<${componentName}Props> = ({ text }) => {
+export default ${componentName}({ text }: ${componentName}Props) => {
   const [count, setCount] = useState(0)
 
   useEffect(() => {
@@ -66,7 +66,6 @@ const ${componentName}: React.FC<${componentName}Props> = ({ text }) => {
   )
 }
 
-export default ${componentName}
 `
 
   const scssContent = `.container {
