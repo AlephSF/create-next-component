@@ -4,8 +4,8 @@ From anywhere in your project run `npx @aleph/create-next-component`
 
 This is a tiny, opinionated command line script that, when run, will ask you
 for a component name (CapitalizeAndCamelCaseItPlease) and then generate a simple
-boilerplate component in the `app/components` folder of your NextJS (or really any)
-project. The boilerplate includes, all in a folder like `app/components/ComponentName`:
+boilerplate component in the `app/(frontend)/components` folder of your NextJS (or really any)
+project. The boilerplate includes, all in a folder like `app/(frontend)/components/ComponentName`:
 - The TypeScript component in `ComponentName.tsx`
 - A Sass-driven css module like `componentName.module.scss`
 - A Storybook story at like `ComponentName.stories.tsx`
