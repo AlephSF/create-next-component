@@ -21,7 +21,7 @@ function findProjectRoot() {
 }
 
 const projectRoot = findProjectRoot()
-const defaultComponentDir = path.join(projectRoot, 'app', 'components')
+const defaultComponentDir = path.join(projectRoot, 'app', '(frontend)', 'components')
 
 function createComponent(componentName, componentDir) {
   const componentBaseDir = path.join(componentDir, componentName)
@@ -31,7 +31,7 @@ function createComponent(componentName, componentDir) {
 
   const tsxContent = `'use client'
 
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import classNames from 'classnames'
 import styles from './${componentName}.module.scss'
 
@@ -91,13 +91,13 @@ export default meta
 
 type Story = StoryObj<typeof ${componentName}>;
 
-export const Foo: Story = {
+export const Default: Story = {
   args: {
     text: 'Hello World!',
   },
 }
 
-export const Bar: Story = {
+export const Foo: Story = {
   args: {
     text: 'Hello World, different variation!',
   },
@@ -124,14 +124,14 @@ component. For instance, if you have a Story called \`Foo\` inside your story, a
 one called \`Bar\` inside it, you could write some stuff in markdown and then go get the 
 whole story like this:
 \`\`\`jsx
-<Canvas of={${componentName}Stories.Foo} />
+<Canvas of={${componentName}Stories.Default} />
 
 <Canvas of={${componentName}Stories.Bar} />
 \`\`\`
 
 Which will then look like this:
 
-<Canvas of={${componentName}Stories.Foo} />
+<Canvas of={${componentName}Stories.Default} />
 
 <Canvas of={${componentName}Stories.Bar} />
   
