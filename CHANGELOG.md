@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/AlephSF/create-next-component/compare/v1.2.3...v1.3.0) (2023-05-11)
+
+
+### Features
+
+* **path:** Adapt to new route group directory ([a78cdba](https://github.com/AlephSF/create-next-component/commit/a78cdbac0aa9f5a0a4aa40720c82284f4bb9d1d9))
+
 ### [1.2.3](https://github.com/AlephSF/create-next-component/compare/v1.2.2...v1.2.3) (2023-05-10)
 
 
